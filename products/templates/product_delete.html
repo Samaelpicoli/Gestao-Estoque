@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+SGE - Excluir Produto
+{% endblock title %}
+
+
+{% block content %}
+
+<div class="container mt-4">
+    <h3 class="display-6">
+        Deletar Produto
+    </h3>
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">
+                Tem certeza de que deseja excluir o produto <strong>{{ object.title }}</strong>?
+
+                <form method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger mt-3">Deletar</button>
+                </form>
+                <a href="{% url 'product_list' %}" class="btn btn-secondary mt-3">Cancelar e Voltar para a Lista de Produtos</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,11 @@
+asgiref==3.8.1
+colorama==0.4.6
+coverage==7.6.12
+Django==5.0.4
+psutil==6.1.1
+python-decouple==3.8
+ruff==0.9.6
+setuptools==75.8.0
+sqlparse==0.5.3
+taskipy==1.14.1
+tomli==2.2.1

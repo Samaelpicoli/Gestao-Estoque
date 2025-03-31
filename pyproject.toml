@@ -1,0 +1,16 @@
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+select = ['I', 'F', 'E', 'W', 'PL']
+exclude = ["*/migrations/*", "venv"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.taskipy.tasks]
+lint = "ruff check . && ruff check . --diff"
+format = "ruff check . --fix && ruff format ."
+run = "python manage.py runserver"
+test = "coverage run manage.py test"
+post_test = "coverage html"
