@@ -55,7 +55,7 @@ Pré-requisitos: Python 3.11+
 
 ```python
 # Realizar o clone desse repositório e acessar a pasta onde foi gerado:
-git clone ...
+git clone https://github.com/Samaelpicoli/Gestao-Estoque.git
 
 # Criar o ambiente virtual:
 python -m venv venv | python3 -m venv venv
