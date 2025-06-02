@@ -3,6 +3,7 @@ colorama==0.4.6
 coverage==7.6.12
 Django==5.0.4
 psutil==6.1.1
+psycopg2-binary==2.9.10
 python-decouple==3.8
 ruff==0.9.6
 setuptools==75.8.0
